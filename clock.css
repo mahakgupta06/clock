@@ -1,0 +1,130 @@
+html,
+body {
+  display: grid;
+  height: 100px;
+  place-items: center;
+  background: black;
+}
+.circle {
+  place-items: center;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: linear-gradient(140deg, red, green, blue);
+  animation: animate 1.5s linear infinite;
+  position: relative;
+}
+.point {
+  background: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 240px;
+  left: 240px;
+}
+.circle .hands {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  height: 485px;
+  width: 485px;
+  border-radius: 50%;
+  filter: blur(5px);
+}
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.hr {
+  position: absolute;
+  font-size: 25px;
+  color: white;
+}
+.hr12 {
+  top: 8px;
+  left: 250px;
+}
+.hr3 {
+  top: 234px;
+  right: 20px;
+  transform: rotate(90deg);
+}
+.hr6 {
+  bottom: 10px;
+  left: 246px;
+}
+
+.hr9 {
+  top: 234px;
+  left: 20px;
+  transform: rotate(90deg);
+}
+.min-hand-outline{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+   
+    border-radius: 50%;
+}
+.min-hand{
+    position: relative;
+
+}
+.min-hand ,.min{
+    width: 3px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    left: 198px;
+
+}
+.hr-hand-outline{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+   
+    border-radius: 50%;
+}
+.hr-hand{
+    position: relative;
+
+}
+.hr-hand ,.har{
+    width: 6px;
+    height: 160px;
+    background: red;
+    position: absolute;
+    left: 147px;
+
+}
+
+.sec-hand-outline{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+   
+    border-radius: 50%;
+}
+.sec-hand{
+    position: relative;
+
+}
+.sec-hand,.sec {
+    width: 2px;
+    height: 166px;
+    background: red;
+    position: absolute;
+    left: 175px;
+
+}
+
